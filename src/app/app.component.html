@@ -1,20 +1,53 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-light bg-dark">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button routerLinkActive="active" routerLink="list" type="button" class="btn btn-dark">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+      </svg>
+      PRODUCTS
+    </button>
+    <button routerLinkActive="active" routerLink="popular" type="button" class="btn btn-dark">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+      </svg>
+      POPULAR
+    </button>
+    <button routerLinkActive="active" routerLink="foods" type="button" class="btn btn-dark">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-egg-fried" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M13.665 6.113a1 1 0 0 1-.667-.977L13 5a4 4 0 0 0-6.483-3.136 1 1 0 0 1-.8.2 4 4 0 0 0-3.693 6.61 1 1 0 0 1 .2 1 4 4 0 0 0 6.67 4.087 1 1 0 0 1 1.262-.152 2.5 2.5 0 0 0 3.715-2.905 1 1 0 0 1 .341-1.113 2.001 2.001 0 0 0-.547-3.478zM14 5c0 .057 0 .113-.003.17a3.001 3.001 0 0 1 .822 5.216 3.5 3.5 0 0 1-5.201 4.065 5 5 0 0 1-8.336-5.109A5 5 0 0 1 5.896 1.08 5 5 0 0 1 14 5z" />
+        <circle cx="8" cy="8" r="3" />
+      </svg>
+      FOODS
+    </button>
+    <button routerLinkActive="active" routerLink="drinks" type="button" class="btn btn-dark">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cup-straw" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M4.497 5.942l.959 8.155c.014.118.06.181.101.21C5.912 14.555 6.724 15 8 15s2.088-.445 2.443-.693c.04-.029.087-.092.101-.21l.96-8.155.993.116-.96 8.156a1.279 1.279 0 0 1-.52.912C10.53 15.466 9.522 16 8 16s-2.531-.534-3.016-.874a1.279 1.279 0 0 1-.521-.912l-.96-8.156.994-.116z" />
+        <path fill-rule="evenodd"
+          d="M4.467 6.116l.005-.006a.024.024 0 0 1-.005.006zM4.645 6c.146-.073.362-.15.648-.222C5.967 5.61 6.924 5.5 8 5.5c1.076 0 2.033.11 2.707.278.286.072.502.149.648.222-.146.073-.362.15-.648.222C10.033 6.39 9.076 6.5 8 6.5c-1.076 0-2.033-.11-2.707-.278A3.284 3.284 0 0 1 4.645 6zm6.888.116s-.003-.002-.005-.006l.005.006zm-.005-.226a.026.026 0 0 1 .005-.006l-.005.006zm-7.056 0l-.005-.006s.003.002.005.006zm.578-1.082C5.824 4.614 6.867 4.5 8 4.5c1.133 0 2.176.114 2.95.308.383.096.728.218.99.372.228.135.56.396.56.82 0 .424-.332.685-.56.82-.262.154-.607.276-.99.372-.774.194-1.817.308-2.95.308-1.133 0-2.176-.114-2.95-.308-.383-.096-.728-.218-.99-.372-.228-.135-.56-.396-.56-.82 0-.424.332-.685.56-.82.262-.154.607-.276.99-.372z" />
+        <path fill-rule="evenodd"
+          d="M12.964 1.314a.5.5 0 0 1-.278.65l-2.255.902-.943 4.242-.976-.216 1-4.5a.5.5 0 0 1 .302-.356l2.5-1a.5.5 0 0 1 .65.278z" />
+      </svg>
+      DRINKS
+    </button>
+  </div>
+  <form class="form-inline">
 
+    <button routerLinkActive="active" routerLink="create"  class="btn btn-dark my-2 my-sm-0">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+      </svg>
+      Create
+    </button>
+  </form>
+</nav>
+<router-outlet></router-outlet>
